@@ -1,0 +1,350 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: #100024;
+  color: #9E8BFF;
+
+  font-family: Bebas, 'Times New Roman', Times, serif;
+
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf)format('truetype');
+}
+
+#headerContainer {
+  display: flex;
+  justify-content: space-around;
+
+  margin-left: 12px;
+  margin-bottom: 0;
+  max-height: 20vh;
+
+  font-size: 1.24rem;
+  font-family: Bebas, 'Times New Roman', Times, serif;
+}
+
+header>h1 {
+  margin: 18px 12px 0 0;
+
+  font-size: 2.2em;
+  font-style: italic;
+}
+
+header>h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#headerNav {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 24px;
+  margin-right: 10px;
+
+  font-size: smaller;
+}
+
+#headerNav a {
+  color: #64F4E3;
+}
+
+.textWrapper {
+  width: 320px;
+  margin: 0;
+}
+
+.textWrapper * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#neptuneImage {
+  max-width: 100%;
+  height: 32vw;
+
+  padding-top: 2rem;
+  margin-right: 6rem;
+  margin-bottom: 6rem;
+}
+
+#infoSection {
+  margin-top: 18px;
+  font-size: 1.2rem;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin: .8rem;
+
+  font-family: Bebas, 'Times New Roman', Times, serif;
+}
+
+#content h2 {
+  height: fit-content;
+}
+
+#headerWrapper {
+  display: flex;
+
+  margin-bottom: 2.4rem;
+}
+
+#ticketAdWrapper {
+  background-color: #9E8BFF;
+  color: #100024;
+
+  width: fit-content;
+  border-radius: 18px;
+}
+
+#informationContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+}
+
+.styleAdder {
+  background-color: #9E8BFF;
+  max-width: 85%;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.styleAdder * {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #100024;
+
+  margin: 12px 12px 12px 12px;
+}
+
+#gallery {
+  display: flex;
+
+  margin-top: 60px;
+}
+
+.galleryImage {
+  max-width: 100%;
+  height: 32vw;
+}
+
+#vehicleInfoSection {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2.4rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.spaceshipArticle>h3 {
+  margin-top: 12px;
+}
+
+.spaceshipContainer>img {
+  border-radius: 12px;
+  border-style: solid;
+  border-color: #9E8BFF;
+  max-width: 100%;
+}
+
+#socialMediaSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 22px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #9E8BFF;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+
+  border-top: solid 2px #9E8BFF;
+}
+
+section>h4 {
+  padding-bottom: 4px;
+  border-bottom: solid 2px #9E8BFF;
+}
+
+.leftFooterLinks a {
+  color: #64F4E3;
+}
+
+.rightFooterLinks a {
+  color: #64F4E3;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 481px) {
+  header>h1 {
+    font-size: 3.6rem;
+  }
+
+  #headerNav a {
+    font-size: 1.2rem;
+  }
+
+  #socialMediaSection {
+    font-size: 1.8rem;
+  }
+
+  #vehicleInfoSection {
+    display: flex;
+    flex-direction: row-reverse;
+
+    /* margin-top: 2.4rem; */
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .spaceshipContainer>img {
+    max-width: 88%;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  header>h1 {
+    font-size: 4.8rem;
+  }
+
+  #headerNav a {
+    font-size: 1.6rem;
+  }
+
+  #vehicleInfoSection {
+    font-size: 1.2rem;
+  }
+
+  #socialMediaSection {
+    font-size: 2rem;
+  }
+
+  footer * {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media screen and (min-width: 527px) {
+  .textWrapper {
+    font-size: 1.5rem;
+  }
+
+  #informationContainer {
+    flex-direction: row;
+  }
+
+  .styleAdder {
+    min-height: 400px;
+    max-width: 45%;
+    margin-right: 6px;
+    margin-left: 6px;
+
+    border: #100024;
+  }
+
+}
+
+@media screen and (min-width: 740px) {
+  #neptuneImage {
+    width: 237.25px;
+    height: 236.8px;
+  }
+
+}
+
+@media screen and (min-width: 920px) {
+
+  header>h1 {
+    font-size: 5.2rem;
+  }
+
+  #headerNav a {
+    font-size: 1.8rem;
+  }
+
+  .textWrapper {
+    width: 462px;
+  }
+
+  .styleAdder {
+    min-height: 470px;
+    max-width: 22%;
+  }
+
+  #vehicleInfoSection {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media screen and (min-width: 1140px) {
+  .textWrapper {
+    width: 462px;
+  }
+
+  .styleAdder {
+    min-height: fit-content;
+    max-width: 22%;
+  }
+
+  #vehicleInfoSection {
+    max-width: 920px;
+  }
+
+}
+
+@media screen and (min-width: 1279px) {
+  #neptuneImage {
+    min-width: 20vw;
+    height: 20vw;
+
+    margin-right: 18rem;
+  }
+}
+
+/* max-width queries */
+
+@media screen and (max-width: 480px) {
+  #neptuneImage {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  #neptuneImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 4000px) {
+  #neptuneImage {
+    margin-top: -0.8rem;
+  }
+}
